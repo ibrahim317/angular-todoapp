@@ -1,0 +1,6 @@
+<div class="my-auto flex flex-col gap-5">
+  @for (item of tasks;track item ) { @if (item.id != 0) {
+
+  <app-card [handleDelete]="handleDelete" [Content]="item" />
+  } }
+</div>
